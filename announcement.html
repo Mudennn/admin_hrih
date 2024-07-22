@@ -1,0 +1,198 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <title>Admin HR</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- SIEDEBAR START -->
+      <aside>
+        <div class="sidebar active">
+          <div class="menu-btn">
+            <span class="material-symbols-outlined"> chevron_left </span>
+          </div>
+          <div class="logo">
+            <div class="image">
+              <img src="/images/logo.jpeg" alt="" />
+            </div>
+            <div class="close" id="close-btn">
+              <span class="material-symbols-outlined"> close </span>
+            </div>
+          </div>
+
+          <div class="nav">
+            <div class="menu">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><span class="material-symbols-outlined"> home </span>
+                    <span class="text">Home </span>
+                    <span class="material-symbols-outlined arrow">
+                      keyboard_arrow_down
+                    </span>
+                  </a>
+
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="#"
+                        ><span class="text">User Feedback Analysis</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="user_time_analysis.html"
+                        ><span class="text">User Time Analysis</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="category_analysis.html"
+                        ><span class="text">Category Analysis</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="feedback_analysis.html"
+                        ><span class="text">Feedback Analysis</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="question_analysis.html"
+                        ><span class="text">Question Analysis</span></a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="active">
+                  <a href="announcement.html"
+                    ><span class="material-symbols-outlined"> campaign </span
+                    ><span class="text">Announcement</span></a
+                  >
+                </li>
+                <li>
+                  <a href="feedback.html"
+                    ><span class="material-symbols-outlined"> feedback </span>
+
+                    <span class="text">Feedback</span></a
+                  >
+                </li>
+                <li>
+                  <a href="users.html"
+                    ><span class="material-symbols-outlined"> groups </span
+                    ><span class="text">Users</span></a
+                  >
+                </li>
+                <li>
+                  <a href="categories.html"
+                    ><span class="material-symbols-outlined"> category </span>
+
+                    <span class="text">Categories</span></a
+                  >
+                </li>
+                <li>
+                  <a href="questions.html"
+                    ><span class="material-symbols-outlined"> list </span>
+
+                    <span class="text">Questions</span></a
+                  >
+                </li>
+                <li>
+                  <a href="documents.html"
+                    ><span class="material-symbols-outlined"> folder </span>
+
+                    <span class="text">Documents</span></a
+                  >
+                </li>
+                <li>
+                  <a href="activities.html"
+                    ><span class="material-symbols-outlined"> event </span>
+
+                    <span class="text">Activities</span></a
+                  >
+                </li>
+                <li>
+                  <a href="admin.html"
+                    ><span class="material-symbols-outlined"> person </span>
+
+                    <span class="text">Admin</span></a
+                  >
+                </li>
+
+                <li>
+                  <a href="#"
+                    ><span class="material-symbols-outlined"> settings </span>
+                    <span class="text">Settings </span>
+                    <span class="material-symbols-outlined arrow">
+                      keyboard_arrow_down
+                    </span>
+                  </a>
+
+                  <ul class="sub-menu">
+                    <li>
+                      <a href="upload_logo.html"
+                        ><span class="text">Upload Logo</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="change_password.html"
+                        ><span class="text">Change Password</span></a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="logout">
+            <ul>
+              <li>
+                <a href="#"
+                  ><span class="material-symbols-outlined"> logout </span
+                  ><span class="text">Logout</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+      <!-- SIDEBAR END -->
+
+      <!-- CONTENT START -->
+      <div class="main-content">
+        <div class="navbar">
+          <div class="image">
+            <a href="index.html">
+              <img src="/images/logo.jpeg" alt="" />
+            </a>
+          </div>
+          <div>
+            <button id="menu-btn">
+              <span class="material-symbols-outlined"> menu </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="content-box">
+          <div class="user">
+            <img src="/images/profile.png" alt="" />
+            <div class="user-details">
+              <p>Hello, Teck Guan! &#128075;</p>
+              <p id="current-date"></p>
+            </div>
+          </div>
+          <hr />
+        </div>
+      </div>
+      <!-- CONTENT END -->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/scripts/sidebar.js"></script>
+    <script src="/scripts/date.js"></script>
+  </body>
+</html>
