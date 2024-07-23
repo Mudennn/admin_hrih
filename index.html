@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/user_feedback_analysis.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined"
       rel="stylesheet"
@@ -30,90 +31,98 @@
           <div class="nav">
             <div class="menu">
               <ul>
-                <li class="active"> 
-                    <a href="#"
-                      ><span class="material-symbols-outlined"> home </span>
-                      <span class="text">Home </span>
-                      <span class="material-symbols-outlined arrow">
-                        keyboard_arrow_down
-                      </span>
-                    </a>
-  
-                    <ul class="sub-menu">
-                      <li class="active">
-                        <a href="index.html"><span class="text">User Feedback Analysis</span></a>
-                      </li>
-                      <li>
-                        <a href="user_time_analysis.html"><span class="text">User Time Analysis</span></a>
-                      </li>
-                      <li>
-                        <a href="category_analysis.html"><span class="text">Category Analysis</span></a>
-                      </li>
-                      <li>
-                        <a href="feedback_analysis.html"><span class="text">Feedback Analysis</span></a>
-                      </li>
-                      <li>
-                        <a href="question_analysis.html"><span class="text">Question Analysis</span></a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="announcement.html"
-                      ><span class="material-symbols-outlined"> campaign </span
-                      ><span class="text">Announcement</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="feedback.html"
-                      ><span class="material-symbols-outlined"> feedback </span>
-  
-                      <span class="text">Feedback</span></a
-                    >
-                  </li>
-                <li >
+                <li class="active">
+                  <a href="#"
+                    ><span class="material-symbols-outlined"> home </span>
+                    <span class="text">Home </span>
+                    <span class="material-symbols-outlined arrow">
+                      keyboard_arrow_down
+                    </span>
+                  </a>
+
+                  <ul class="sub-menu">
+                    <li class="active">
+                      <a href="index.html"
+                        ><span class="text">User Feedback Analysis</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="user_time_analysis.html"
+                        ><span class="text">User Time Analysis</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="category_analysis.html"
+                        ><span class="text">Category Analysis</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="feedback_analysis.html"
+                        ><span class="text">Feedback Analysis</span></a
+                      >
+                    </li>
+                    <li>
+                      <a href="question_analysis.html"
+                        ><span class="text">Question Analysis</span></a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="announcement.html"
+                    ><span class="material-symbols-outlined"> campaign </span
+                    ><span class="text">Announcement</span></a
+                  >
+                </li>
+                <li>
+                  <a href="feedback.html"
+                    ><span class="material-symbols-outlined"> feedback </span>
+
+                    <span class="text">Feedback</span></a
+                  >
+                </li>
+                <li>
                   <a href="users.html"
                     ><span class="material-symbols-outlined"> groups </span
                     ><span class="text">Users</span></a
                   >
                 </li>
-                <li >
+                <li>
                   <a href="category.html"
                     ><span class="material-symbols-outlined"> category </span>
 
                     <span class="text">Categories</span></a
                   >
                 </li>
-                <li >
-                    <a href="questions.html"
-                      ><span class="material-symbols-outlined"> list </span>
-  
-                      <span class="text">Questions</span></a
-                    >
-                  </li>
-                <li >
+                <li>
+                  <a href="questions.html"
+                    ><span class="material-symbols-outlined"> list </span>
+
+                    <span class="text">Questions</span></a
+                  >
+                </li>
+                <li>
                   <a href="documents.html"
                     ><span class="material-symbols-outlined"> folder </span>
 
                     <span class="text">Documents</span></a
                   >
                 </li>
-                <li >
+                <li>
                   <a href="activities.html"
                     ><span class="material-symbols-outlined"> event </span>
 
                     <span class="text">Activities</span></a
                   >
                 </li>
-                <li >
+                <li>
                   <a href="admin.html"
                     ><span class="material-symbols-outlined"> person </span>
 
                     <span class="text">Admin</span></a
                   >
                 </li>
-                
-               
-                
+
                 <li>
                   <a href="#"
                     ><span class="material-symbols-outlined"> settings </span>
@@ -125,12 +134,15 @@
 
                   <ul class="sub-menu">
                     <li>
-                      <a href="upload_logo.html"><span class="text">Upload Logo</span></a>
+                      <a href="upload_logo.html"
+                        ><span class="text">Upload Logo</span></a
+                      >
                     </li>
                     <li>
-                      <a href="change_password.html"><span class="text">Change Password</span></a>
+                      <a href="change_password.html"
+                        ><span class="text">Change Password</span></a
+                      >
                     </li>
-                    
                   </ul>
                 </li>
               </ul>
@@ -177,9 +189,80 @@
           </div>
           <hr />
 
-          
+          <div class="content">
+            <h1>User Feedback Analysis</h1>
+
+            <div class="feedback-content">
+              <div class="left-content">
+                <div class="total-question">
+                  <p>Total Question: 0</p>
+                </div>
+                <div class="table">
+                  <section class="table-body">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>No</th>
+                          <th>Agent Name</th>
+                          <th>Count</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>admin</td>
+                          <td>10</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Nazirul Amin</td>
+                          <td>20</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+                </div>
+              </div>
+
+              <div class="right-content">
+                <p>Search Agent:</p>
+                <div class="search-container">
+                  <form action="">
+                    <input type="text" placeholder="Choose Agent" name="search" class="form-control">
+                    <button type="submit" class="primary-button">Search</button>
+                  </form>
+                </div>
+                <hr>
+                <div class="result-container">
+                  <h3>Teo Teck Guan</h3>
+                  <p>Total Question : 10</p>
+                </div>
+                <div class="table">
+                  <section class="table-body">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>No</th>
+                          <th>Agent Name</th>
+                          <th>Count</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>admin</td>
+                          <td>10</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
       <!-- CONTENT END -->
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
