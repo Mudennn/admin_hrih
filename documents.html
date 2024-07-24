@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/documents.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined"
       rel="stylesheet"
@@ -187,6 +188,87 @@
             </div>
           </div>
           <hr />
+
+          <div class="content">
+            <h1>Question List</h1>
+
+            <div class="table">
+              <div class="search-create-container">
+                <div class="search-container">
+                  <form action="">
+                    <input type="text" placeholder="Category" name="search" class="form-control">
+                    <button type="submit" class="primary-button">Search</button>
+                  </form>
+                </div>
+                <button onclick="window.location.href='create_documents.html'" class="primary-button create"><span class="material-symbols-outlined">
+                  add
+                  </span>Create New Document</button>
+              </div>
+              <section class="table-body">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>Category</th>
+                      <th>Document</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Probation</td>
+                      <td>
+                        <div class="answer">
+                          <h3 class="questions">Title:</h3>
+                          <p>
+                            Document 1
+                          </p>
+                      
+                      </div>
+                      </td>
+
+                      <td>
+                        <div class="action_button">
+                          <span class="material-symbols-outlined edit">
+                            edit_square
+                          </span>
+                          <span class="material-symbols-outlined delete">
+                            delete
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+
+                      <td>Probation</td>
+                      <td>
+                        <div class="answer">
+                          <h3 class="questions">Title:</h3>
+                          <p>
+                            Document 2
+                          </p>
+                          
+                      </div>
+                      </td>
+
+                      <td>
+                        <div class="action_button">
+                          <span class="material-symbols-outlined edit">
+                            edit_square
+                          </span>
+                          <span class="material-symbols-outlined delete">
+                            delete
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+            </div>
+          </div>
         </div>
       </div>
       <!-- CONTENT END -->

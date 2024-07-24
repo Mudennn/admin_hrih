@@ -1,0 +1,77 @@
+
+.content-box .content {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 32px;
+    width: 50%;
+    border: 1px solid var(--main-color);
+    margin: 0 auto 32px auto;
+    border-radius: 32px;
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+
+
+form {
+    padding: 6px 0 0 0;
+    width: 100%;
+}
+.input-form {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+}
+
+.form-label {
+    margin-bottom: 4px;
+    font-weight: semi-bold;
+}
+
+.form-control {
+    padding: 16px 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: var(--bg-color);
+}
+
+.form-control:focus {
+    border-color: var(--main-color); 
+    outline: none;
+}
+
+
+.input-form textarea{
+    height: 200px;
+}
+
+form .primary-button{
+    width: 100%;
+}
+
+
+
+/* PHONE MEDIA QUERY */
+@media only screen and (max-width: 767px) {
+    
+    .content-box .content{
+        width: 90%;
+        margin-bottom: 32px;
+        padding: 24px;
+    }
+    
+  }
+  
+  /* TABLET AND IPAD QUERY */
+  @media (min-width: 768px) and (max-width: 1024px) {
+
+    .container .main-content{
+        height: fit-content;
+      }
+    
+    .content-box .content{
+        width: 70%;
+    }
+    
+  }

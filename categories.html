@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/categories.css">
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined"
       rel="stylesheet"
@@ -50,7 +51,7 @@
                         ><span class="text">User Time Analysis</span></a
                       >
                     </li>
-                    <li >
+                    <li>
                       <a href="category_analysis.html"
                         ><span class="text">Category Analysis</span></a
                       >
@@ -80,7 +81,7 @@
                     <span class="text">Feedback</span></a
                   >
                 </li>
-                <li >
+                <li>
                   <a href="users.html"
                     ><span class="material-symbols-outlined"> groups </span
                     ><span class="text">Users</span></a
@@ -187,6 +188,107 @@
             </div>
           </div>
           <hr />
+
+          <div class="content">
+            <h1>Category Create</h1>
+
+            <div class="category-create-content">
+              <div class="left-content">
+                <div class="table">
+                  <section class="table-body">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>No</th>
+                          <th>Category</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>
+                            <div class="text-category">
+                              <h3>Probation</h3>
+                              <p>In this section, we will explore the concept of probation in the context of data analytics. Probation refers to a period during which new employees or team members are closely monitored and evaluated to assess their performance and suitability for a particular role or project. We will discuss the purpose of probation, key performance indicators (KPIs) used to evaluate probationary employees, strategies for providing feedback and support during probation, and best practices for making informed decisions about probation outcomes. </p>
+                            </div>
+                          </td>
+                          <td><div class="action_button">
+                            <span class="material-symbols-outlined question">
+                              view_list
+                              </span>
+                            <span class="material-symbols-outlined edit">
+                              edit_square
+                              </span>
+                            <span class="material-symbols-outlined delete">
+                              delete
+                              </span>
+                          </div></td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td><div class="text-category">
+                            <h3>Probation</h3>
+                            <p>In this section, we will explore the concept of probation in the context of data analytics. Probation refers to a period during which new employees or team members are closely monitored and evaluated to assess their performance and suitability for a particular role or project. We will discuss the purpose of probation, key performance indicators (KPIs) used to evaluate probationary employees, strategies for providing feedback and support during probation, and best practices for making informed decisions about probation outcomes. </p>
+                          </div></td>
+                          <td><div class="action_button">
+                            <span class="material-symbols-outlined question">
+                              view_list
+                              </span>
+                            <span class="material-symbols-outlined edit">
+                              edit_square
+                              </span>
+                            <span class="material-symbols-outlined delete">
+                              delete
+                              </span>
+                          </div></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </section>
+                </div>
+              </div>
+
+              <div class="right-content">
+                <h3>Create Category</h3>
+                <hr>
+                <div class="create-category-container">
+                  <form action="">
+                    <div class="input-form">
+                      <label for="description" class="form-label">Category Name:</label>
+                      <input
+                        type="text"
+                        placeholder=""
+                        name="search"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="input-form">
+                      <label for="description" class="form-label">Description:</label>
+                      <textarea
+                        id="description"
+                        class="form-control"
+                        rows="4"
+                      ></textarea>
+                    </div>
+                    <label for="description" class="form-label">Image:</label>
+                    <div class="file-upload-container">
+                      <div id="preview-container" class="preview-container">
+                          <div class="upload-placeholder">
+                            <span class="material-symbols-outlined">
+                              cloud_upload
+                              </span>
+                              <p class="upload-text">Select Image</p>
+                          </div>
+                          <input type="file" id="file-input" class="file-input" accept="image/*">
+                      </div>
+                  </div>
+                    <button type="submit" class="primary-button">Create Category</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- CONTENT END -->
@@ -194,5 +296,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/scripts/sidebar.js"></script>
     <script src="/scripts/date.js"></script>
+    <script src="/scripts/image_preview.js"></script>
   </body>
 </html>

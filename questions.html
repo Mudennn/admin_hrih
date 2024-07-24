@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/questions.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined"
       rel="stylesheet"
@@ -50,7 +51,7 @@
                         ><span class="text">User Time Analysis</span></a
                       >
                     </li>
-                    <li >
+                    <li>
                       <a href="category_analysis.html"
                         ><span class="text">Category Analysis</span></a
                       >
@@ -80,20 +81,20 @@
                     <span class="text">Feedback</span></a
                   >
                 </li>
-                <li >
+                <li>
                   <a href="users.html"
                     ><span class="material-symbols-outlined"> groups </span
                     ><span class="text">Users</span></a
                   >
                 </li>
-                <li >
+                <li>
                   <a href="categories.html"
                     ><span class="material-symbols-outlined"> category </span>
 
                     <span class="text">Categories</span></a
                   >
                 </li>
-                <li class="active"> 
+                <li class="active">
                   <a href="questions.html"
                     ><span class="material-symbols-outlined"> list </span>
 
@@ -187,6 +188,108 @@
             </div>
           </div>
           <hr />
+
+          <div class="content">
+            <h1>Question List</h1>
+
+            <div class="table">
+              <div class="search-create-container">
+                <div class="search-container">
+                  <form action="">
+                    <input type="text" placeholder="Category" name="search" class="form-control">
+                    <button type="submit" class="primary-button">Search</button>
+                  </form>
+                </div>
+                <button onclick="window.location.href='create_question.html'" class="primary-button create"><span class="material-symbols-outlined">
+                  add
+                  </span>Create New Question</button>
+              </div>
+              <section class="table-body">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>No</th>
+                      <th>Category</th>
+                      <th>Question</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Probation</td>
+                      <td>
+                        <div class="answer">
+                          <h3 class="questions">Question</h3>
+                          <p>
+                            What is Probation?
+                          </p>
+                          <h3>Answer</h3>
+
+                          <p>An employee is put on trial to prove his/her fitness for the job position for which he/she is employed in terms of his/her performance, conduct, and character.</p>
+                          <h4>Explanation</h4>
+                          <ul>
+                              <li>There is no statutory definition of what a “probation” is.</li>
+                              <li>However, case law does distinguish between a confirmed employee and a probationer.</li>
+                          </ul>
+                          <h4>Related Video</h4>
+                          <a href="https://www.youtube.com/watch?v=BLFetpRaQTY">Probation Management  <span class="material-symbols-outlined">
+                              north_east
+                              </span></a>
+                      </div>
+                      </td>
+
+                      <td>
+                        <div class="action_button">
+                          <span class="material-symbols-outlined edit">
+                            edit_square
+                          </span>
+                          <span class="material-symbols-outlined delete">
+                            delete
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+
+                      <td>Probation</td>
+                      <td>
+                        <div class="answer">
+                          <h3 class="questions">Question</h3>
+                          <p>
+                            Is probation or probationary period is mandatory?
+                          </p>
+                          <h3>Answer</h3>
+                          <ul>
+                              <li>There is no any Legal definition of a ‘Probationer’ or ‘Probationary Period’.</li>
+                              <li>The law does not mandate a probation.</li>
+                          </ul>
+                          <h4>Explanation</h4>
+                          <ul>
+                              <li>There is no any clause in the Employment Act 1955 does it say anything about probation.</li>
+                              <li>Probation isn’t even a legal requirement.</li>
+                              <li>Employer can ‘confirm’ an employee straight away.</li>
+                          </ul>
+                      </div>
+                      </td>
+
+                      <td>
+                        <div class="action_button">
+                          <span class="material-symbols-outlined edit">
+                            edit_square
+                          </span>
+                          <span class="material-symbols-outlined delete">
+                            delete
+                          </span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+            </div>
+          </div>
         </div>
       </div>
       <!-- CONTENT END -->
