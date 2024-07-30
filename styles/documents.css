@@ -190,6 +190,15 @@
         width: 100%;
       }
 
+      .search-container form{
+        display: grid;
+      }
+
+      .search-container form .primary-button{
+        width: 100%;
+        margin-bottom: 16px;
+      }
+
 
     /* TABLE */
     th:nth-child(2),
