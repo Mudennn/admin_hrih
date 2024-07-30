@@ -254,6 +254,18 @@ form .primary-button{
       grid-template-columns: 1fr;
   }
 
+  .search-container{
+    width: 100%;
+  }
+
+  .search-container form{
+    display: grid;
+  }
+
+  .search-container form .primary-button{
+    width: 100%;
+  }
+
     /* TABLE */
     th:nth-child(2),
     td:nth-child(2) {

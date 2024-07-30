@@ -53,6 +53,14 @@ form .primary-button{
     width: 100%;
 }
 
+/* Specific styles for date input */
+input[type="date"].form-control {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 16px; /* Make room for custom calendar icon */
+}
+
 /* FILE UPLOAD CONTAINER */
 .file-upload-container {
     text-align: center;
