@@ -25,6 +25,7 @@ form {
     display: flex;
     flex-direction: column;
     margin: 16px 0;
+    position: relative;
 }
 
 .form-label {
@@ -54,13 +55,37 @@ form .primary-button{
 }
 
 /* Specific styles for date input */
-input[type="date"].form-control {
+.input-form input[type="date"].form-control {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    padding-right: 16px; /* Make room for custom calendar icon */
     width: 100%;
 }
+
+/* Custom calendar icon for date input only */
+.input-form input[type="date"].form-control::after {
+    content: "\1F4C5"; /* Unicode for calendar emoji */
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    pointer-events: none;
+    font-size: 20px;
+    color: #888;
+}
+
+/* Ensure the native picker is accessible */
+.input-form input[type="date"].form-control::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
 
 /* FILE UPLOAD CONTAINER */
 .file-upload-container {
