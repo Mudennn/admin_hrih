@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="styles/index.css" />
     <link rel="stylesheet" href="styles/sidebar.css" />
     <link rel="stylesheet" href="styles/create_activity.css" />
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined"
       rel="stylesheet"
@@ -199,11 +200,7 @@
 
               <div class="input-form">
                 <label for="description" class="form-label">Description:</label>
-                <textarea
-                  id="description"
-                  class="form-control"
-                  rows="4"
-                ></textarea>
+                <div id="editor" class="form-control"></div>
               </div>
 
               <label for="description" class="form-label">Banner:</label>
@@ -231,5 +228,22 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/scripts/sidebar.js"></script>
     <script src="/scripts/date.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script>
+      // Initialize Quill editor
+      var quill = new Quill('#editor', {
+        theme: 'snow', // Specify theme in configuration
+        placeholder: '',
+        modules: {
+          toolbar: [
+            [{ header: [1, 2, false] }],
+            ['bold', 'italic', 'underline'],
+            ['link', 'image'],
+            [{ list: 'ordered' }, { list: 'bullet' }]
+          ]
+        }
+      });
+    
+    </script>
   </body>
 </html>
