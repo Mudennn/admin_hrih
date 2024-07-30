@@ -20,11 +20,13 @@
     gap: 8px;
   }
 
+
 .search-container form {
     display: flex;
     gap: 8px;
     align-items: center;
     margin-bottom: 8px;
+    
 }
 
 .form-control {

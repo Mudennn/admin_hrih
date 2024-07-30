@@ -196,13 +196,21 @@
               <div class="search-create-container">
                 <div class="search-container">
                   <form action="">
-                    <input type="text" placeholder="Category" name="search" class="form-control">
+                    <input type="text" placeholder="Question" name="search" class="form-control">
+                    <select id="dropdown" name="dropdown" class="form-control">
+                      <option value="">Select Cateogry</option>
+                      <option value="option1">Probation</option>
+                      <option value="option2">Training and Development</option>
+                  </select>
                     <button type="submit" class="primary-button">Search</button>
                   </form>
                 </div>
-                <button onclick="window.location.href='create_question.html'" class="primary-button create"><span class="material-symbols-outlined">
-                  add
-                  </span>Create New Question</button>
+                <div>
+                  <button onclick="window.location.href='create_question.html'" class="primary-button create"><span class="material-symbols-outlined">
+                    add
+                    </span>Create New Question</button>
+                </div>
+               
               </div>
               <section class="table-body">
                 <table>

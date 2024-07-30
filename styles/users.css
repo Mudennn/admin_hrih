@@ -77,7 +77,10 @@
     visibility: visible;
   }
 
-  
+  tr td .id {
+    display: flex;
+    gap: 8px;
+  }
   tr td .date {
    font-size: 13px;
    display: flex;
@@ -85,6 +88,7 @@
    align-items: center;
    gap: 4px;
   }
+
   tr td .date .time {
     margin-top: 2.53px;
    font-size: 12px;
@@ -156,7 +160,7 @@
     /* TABLE */
     th:nth-child(2),
     td:nth-child(2) {
-      min-width: 100px;
+      min-width: 250px;
     }
     th:nth-child(3),
     td:nth-child(3) {
@@ -164,7 +168,7 @@
     }
     th:nth-child(4),
     td:nth-child(4) {
-      min-width: 200px;
+      min-width: 400px;
     } /* Status column */
     th:nth-child(5),
     td:nth-child(5) {

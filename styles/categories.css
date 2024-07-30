@@ -18,6 +18,31 @@
 }
 
 
+.search-container{
+  width: 40%;
+}
+
+.search-container form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.form-control {
+  padding: 14px 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: var(--bg-color);
+  width: 100%;
+}
+
+.search-container form .primary-button{
+  width: 150px;
+}
+
+
+
 /* RIGHT CONTENT */
 
 .right-content h3{
