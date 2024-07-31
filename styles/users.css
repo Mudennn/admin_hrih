@@ -16,6 +16,30 @@
     align-items: center;
     gap: 8px;
   }
+
+  .search-container{
+    width: 25%;
+  }
+  
+  .search-container form {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .form-control {
+    padding: 14px 8px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: var(--bg-color);
+    width: 100%;
+  }
+  
+  .search-container form .primary-button{
+    width: 150px;
+  }
+  
   
   /* TABLE DATA */
   table {
@@ -118,26 +142,34 @@
   } /* No column */
   th:nth-child(2),
   td:nth-child(2) {
-    width: 5%;
+    width: 3%;
   } /* Date column */
   th:nth-child(3),
   td:nth-child(3) {
-    width: 10%;
+    width: 3%;
   } /* Announcement column */
   th:nth-child(4),
   td:nth-child(4) {
-    width: 10%;
+    width: 6%;
   } /* Banner column */
   th:nth-child(5),
   td:nth-child(5) {
-    width: 10%;
+    width: 3%;
   } /* Action column */
   th:nth-child(6),
   td:nth-child(6) {
-    width: 2%;
+    width: 3%;
   } /* Action column */
   th:nth-child(7),
   td:nth-child(7) {
+    width: 5%;
+  } /* Action column */
+  th:nth-child(8),
+  td:nth-child(8) {
+    width: 2%;
+  } /* Action column */
+  th:nth-child(9),
+  td:nth-child(9) {
     width: 2%;
   } /* Action column */
   
@@ -157,22 +189,46 @@
         width: 100%;
       }
 
+      .search-container{
+        width: 100%;
+      }
+    
+      .search-container form{
+        display: grid;
+      }
+    
+      .search-container form .primary-button{
+        width: 100%;
+      }
+
     /* TABLE */
     th:nth-child(2),
     td:nth-child(2) {
-      min-width: 250px;
+      min-width: 100px;
     }
     th:nth-child(3),
     td:nth-child(3) {
-      min-width: 200px;
+      min-width: 100px;
     }
     th:nth-child(4),
     td:nth-child(4) {
-      min-width: 400px;
+      min-width: 350px;
     } /* Status column */
     th:nth-child(5),
     td:nth-child(5) {
       min-width: 200px;
+    } /* Actions column */
+    th:nth-child(6),
+    td:nth-child(6) {
+      min-width: 100px;
+    } /* Actions column */
+    th:nth-child(7),
+    td:nth-child(7) {
+      min-width: 200px;
+    } /* Actions column */
+    th:nth-child(9),
+    td:nth-child(9) {
+      min-width: 100px;
     } /* Actions column */
   
     .table {
@@ -186,6 +242,10 @@
     /* TABLE */
     .table {
       width: 93vw;
+    }
+
+    .search-container{
+      width: 50%;
     }
   }
   
